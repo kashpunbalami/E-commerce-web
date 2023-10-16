@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Item List</title></head>
+    <body>
+        <h1>Item list</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Product price</th>
+                    <th>Product description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for n in product_data %}
+                <tr>
+                    <th>{{n.name}}</th>
+                    <th>{{n.price}}</th>
+                    <th>{{n.description}}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <h1>Home menu</h1>
+        <li><a href="{% url 'chiya_about' %}">about</a></li>
+        <li><a href="{% url 'chiya_contacts' %}">contacts</a></li>
+        <li><a href="{% url 'product_list' %}">product_list</a></li>
+        <li><a href="{% url 'save_product' %}">add product</a></li>
+        <li><a href="{% url 'display_bakery' %}">bakery item</a></li>
+        <li><a href ="/add_bakery">Add bakery item</a></li>
+        <li><a href ="/delete_bakery">Delete bakery item</a></li>
+        <li><a href ="/delete_chiya">Delete chiya item</a></li>
+        
+    </body>
+</html>

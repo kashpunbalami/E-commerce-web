@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Update Form</title></head>
+    <body>
+        <form method="post" action="{% url 'update_item' item.id %}">
+            {% csrf_token %}
+            <label for="attribute_name">Attribute Name:</label>
+            <input type="text" id="attribute_name" name="attribute_name" value="{{ item.attribute_name }}">
+            <input type="submit" value="Update">
+        </form>        
+    </body>
+</html>
+
+

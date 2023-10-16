@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Add bakery item</title></head>
+    <body>
+        <h1>Add your bakery item here</h1>
+        <form method="POST" action="{% url 'add_bakery' %}">
+            {% csrf_token %}
+            <label for="item name"> Item name </label><br/>
+            <input type="text" name="item" id="item" value=""/><br/>
+            <label for="price">price </label><br/>
+            <input type="number" name="price"/><br/>
+            <label for="description">description </label><br/>
+            <input type="text" name="description"/><br/>
+            <button type="submit">add item</button>
+        </form>
+        {{ n }}
+    </body>
+</html>

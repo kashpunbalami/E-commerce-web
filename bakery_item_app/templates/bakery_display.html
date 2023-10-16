@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><title>bakery items</title></head>
+    <body>
+        <h1>Bakery Items</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Description</th>    
+                </tr> 
+            </thead>
+            <tbody>
+                {% for n in bakery_data %}
+                <tr>
+                    <th>{{n.name}}</th>
+                    <th>{{n.price}}</th>
+                    <th>{{n.description}}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+       
+
+
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Delete bakery item</title></head>
+    <body>
+        <h1>Bakery item list</h1>
+        {% for n in my_object %}
+        <p>{{n.name}} -<a href="/delete_bakery/{{n.item.id}}"> Delete item</a></p>
+        {% endfor %}
+    </body>
+</html>
